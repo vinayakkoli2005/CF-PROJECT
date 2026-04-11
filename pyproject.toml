@@ -39,3 +39,11 @@ addopts = "-ra -q"
 [tool.ruff]
 line-length = 100
 target-version = "py311"
+
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu124" }
